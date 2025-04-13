@@ -197,7 +197,7 @@ figure {
 .img-fluid {
     flex-grow: 1;
     width: 100%;
-    height: auto;   
+    height: auto;
     object-fit: contain;
 }
 
@@ -212,7 +212,7 @@ figcaption {
     left: 0;
     width: 100%;
     /* background-color: rgba(128, 114, 170, 0.85); */
-    background-color: var(--primary); 
+    background-color: var(--primary);
     color: var(--white);
     font-size: 0.85rem;
     padding: 0.5rem;
@@ -265,24 +265,22 @@ footer p {
     }
 
     .logo-nav {
-        flex-direction: row;
+        gap: 1rem;
         justify-content: space-between;
         align-items: center;
     }
 
     .logo-nav .logo {
-        width: 5vw;
+        width: 10vw;
         margin-bottom: 0;
     }
-  
+
     ul.nav-list {
         flex-direction: row;
-        width: unset;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .nav-link {
-        background-color: unset;
         padding: 0.5rem 0;
     }
 
@@ -306,6 +304,25 @@ footer p {
     body {
         font-size: 1.25rem;
     }
+
+    .logo-nav {
+        flex-direction: row;
+    }
+
+    .logo-nav .logo {
+        width: 5vw;
+    }
+
+    ul.nav-list {
+        flex-direction: row;
+        width: unset;
+        gap: 2rem;
+    }
+
+    .nav-link {
+        background-color: unset;
+    }
+
     .card {
         /* max-width: 60rem;
         margin: auto; */
@@ -323,16 +340,18 @@ footer p {
         margin: 0 2rem 0 0;
         float: left;
     }
-    
-    .card-body, .card-container {
+
+    .card-body,
+    .card-container {
         padding: 2.5rem;
         text-wrap: wrap;
     }
 
-    .card-title, .card-text {
+    .card-title,
+    .card-text {
         text-align: left;
     }
-    
+
     .nav-link {
         font-size: 1.2rem;
     }
@@ -340,7 +359,9 @@ footer p {
 
 /* Mobile Specific Adjustments */
 @media (max-width: 35rem) {
-    .card-body, .card-container {
+
+    .card-body,
+    .card-container {
         padding: 1.5rem;
     }
 
